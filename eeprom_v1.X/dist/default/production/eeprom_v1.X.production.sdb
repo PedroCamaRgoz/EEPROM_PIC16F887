@@ -1,0 +1,258 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+"14 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\eeprom.c
+[v _EEPROM_read EEPROM_read `(uc  1 e 1 0 ]
+"24
+[v _EEPROM_write EEPROM_write `(v  1 e 1 0 ]
+"41
+[v _end_receita end_receita `(i  1 e 2 0 ]
+"46
+[v _salvar_receita salvar_receita `(v  1 e 1 0 ]
+"55
+[v _buscar_receita buscar_receita `(v  1 e 1 0 ]
+"63
+[v _deletar_receita deletar_receita `(v  1 e 1 0 ]
+"71
+[v _receita_livre receita_livre `(v  1 e 1 0 ]
+"86
+[v _formatar_receitas formatar_receitas `(v  1 e 1 0 ]
+"79 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\lcd.c
+[v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
+"112
+[v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
+"128
+[v _dispLCD_lincol dispLCD_lincol `(v  1 e 1 0 ]
+"134
+[v _dispLCD_newChar dispLCD_newChar `(v  1 e 1 0 ]
+"150
+[v _dispLCD_init dispLCD_init `(v  1 e 1 0 ]
+"173
+[v _dispLCD dispLCD `(v  1 e 1 0 ]
+"184
+[v _dispLCDstr dispLCDstr `(v  1 e 1 0 ]
+"200
+[v _dispLCD_num dispLCD_num `(v  1 e 1 0 ]
+"243
+[v _dispLCD_clr dispLCD_clr `(v  1 e 1 0 ]
+"249
+[v _dispLCD_B0 dispLCD_B0 `(uc  1 e 1 0 ]
+"254
+[v _dispLCD_B1 dispLCD_B1 `(uc  1 e 1 0 ]
+"14 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"7 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X/estante_funcoes.h
+[v _linha0 linha0 `[16]uc  1 e 16 0 ]
+"8
+[v _linha1 linha1 `[16]uc  1 e 16 0 ]
+[s S225 . 7 `*.27(v 1 init 1 0 `*.27(v 1 print 1 1 `*.27(v 1 printpos 1 2 `*.27(v 1 printv 1 3 `*.27(v 1 clr 1 4 `*.27(uc 1 B0 1 5 `*.27(uc 1 B1 1 6 ]
+"20
+[v _lcd lcd `S225  1 e 7 0 ]
+[s S262 . 5 `*.27(v 1 salvar 1 0 `*.27(v 1 buscar 1 1 `*.27(v 1 deletar 1 2 `*.27(v 1 livre 1 3 `*.27(v 1 formatar 1 4 ]
+"30
+[v _receita receita `S262  1 e 5 0 ]
+[s S50 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S64 . 1 `S50 1 . 1 0 `S59 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES64  1 e 1 @11 ]
+[s S138 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1619
+[u S147 . 1 `S138 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES147  1 e 1 @136 ]
+"3250
+[v _EEDAT EEDAT `VEuc  1 e 1 @268 ]
+"3257
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"3271
+[v _EEADRH EEADRH `VEuc  1 e 1 @271 ]
+[s S32 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3514
+[u S39 . 1 `S32 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES39  1 e 1 @396 ]
+"3544
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+[s S127 . 1 `uc 1 BUS 1 0 :4:0 
+`uc 1 RS 1 0 :1:4 
+`uc 1 EN 1 0 :1:5 
+`uc 1 B0 1 0 :1:6 
+`uc 1 B1 1 0 :1:7 
+]
+"27 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\lcd.c
+[u S133 . 1 `S127 1 . 1 0 ]
+[v _LCDbits LCDbits `VES133  1 e 1 @8 ]
+"31
+[v _newChar_degree newChar_degree `DC[8]uc  1 e 8 0 ]
+"14 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"25
+} 0
+"46 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\eeprom.c
+[v _salvar_receita salvar_receita `(v  1 e 1 0 ]
+{
+"50
+[v salvar_receita@i i `uc  1 a 1 10 ]
+"48
+[v salvar_receita@aux aux `i  1 a 2 8 ]
+"46
+[v salvar_receita@adrs adrs `uc  1 p 1 4 ]
+[v salvar_receita@data data `*.4uc  1 p 1 5 ]
+"53
+} 0
+"24
+[v _EEPROM_write EEPROM_write `(v  1 e 1 0 ]
+{
+[v EEPROM_write@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_write@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_write@data data `uc  1 p 1 0 ]
+"26
+[v EEPROM_write@addr addr `uc  1 a 1 1 ]
+"39
+} 0
+"71
+[v _receita_livre receita_livre `(v  1 e 1 0 ]
+{
+"74
+[v receita_livre@i i `i  1 a 2 9 ]
+"73
+[v receita_livre@aux aux `i  1 a 2 7 ]
+"71
+[v receita_livre@rec rec `*.4uc  1 p 1 4 ]
+"84
+} 0
+"184 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\lcd.c
+[v _dispLCDstr dispLCDstr `(v  1 e 1 0 ]
+{
+[v dispLCDstr@str str `*.4DCuc  1 p 1 6 ]
+"197
+} 0
+"150
+[v _dispLCD_init dispLCD_init `(v  1 e 1 0 ]
+{
+"170
+} 0
+"134
+[v _dispLCD_newChar dispLCD_newChar `(v  1 e 1 0 ]
+{
+[v dispLCD_newChar@adrs adrs `uc  1 a 1 wreg ]
+"136
+[v dispLCD_newChar@i i `uc  1 a 1 6 ]
+"134
+[v dispLCD_newChar@adrs adrs `uc  1 a 1 wreg ]
+[v dispLCD_newChar@ptr ptr `*.24DCuc  1 p 1 3 ]
+"137
+[v dispLCD_newChar@adrs adrs `uc  1 a 1 5 ]
+"141
+} 0
+"12 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ui  1 p 2 0 ]
+"19
+} 0
+"173 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\lcd.c
+[v _dispLCD dispLCD `(v  1 e 1 0 ]
+{
+[v dispLCD@lin lin `uc  1 p 1 6 ]
+[v dispLCD@col col `uc  1 p 1 7 ]
+[v dispLCD@str str `*.4DCuc  1 p 1 8 ]
+"182
+} 0
+"128
+[v _dispLCD_lincol dispLCD_lincol `(v  1 e 1 0 ]
+{
+[v dispLCD_lincol@lin lin `uc  1 a 1 wreg ]
+[v dispLCD_lincol@lin lin `uc  1 a 1 wreg ]
+[v dispLCD_lincol@col col `uc  1 p 1 3 ]
+"130
+[v dispLCD_lincol@lin lin `uc  1 a 1 5 ]
+"131
+} 0
+"79
+[v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
+{
+[v dispLCD_instReg@i i `uc  1 a 1 wreg ]
+[v dispLCD_instReg@i i `uc  1 a 1 wreg ]
+"81
+[v dispLCD_instReg@i i `uc  1 a 1 2 ]
+"109
+} 0
+"112
+[v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
+{
+[v dispLCD_dataReg@d d `uc  1 a 1 wreg ]
+[v dispLCD_dataReg@d d `uc  1 a 1 wreg ]
+"114
+[v dispLCD_dataReg@d d `uc  1 a 1 1 ]
+"125
+} 0
+"55 C:\Users\Pedro\MPLABXProjects\eeprom_v1.X\eeprom.c
+[v _buscar_receita buscar_receita `(v  1 e 1 0 ]
+{
+"59
+[v buscar_receita@i i `uc  1 a 1 10 ]
+"57
+[v buscar_receita@aux aux `i  1 a 2 8 ]
+"55
+[v buscar_receita@adrs adrs `uc  1 p 1 4 ]
+[v buscar_receita@data data `*.4uc  1 p 1 5 ]
+"61
+} 0
+"41
+[v _end_receita end_receita `(i  1 e 2 0 ]
+{
+[v end_receita@x x `i  1 p 2 0 ]
+"44
+} 0
+"14
+[v _EEPROM_read EEPROM_read `(uc  1 e 1 0 ]
+{
+[v EEPROM_read@addr addr `uc  1 a 1 wreg ]
+[v EEPROM_read@addr addr `uc  1 a 1 wreg ]
+"16
+[v EEPROM_read@addr addr `uc  1 a 1 0 ]
+"22
+} 0
